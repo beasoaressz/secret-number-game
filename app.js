@@ -2,7 +2,7 @@ let drawnNumbersList = [];
 let limitNumber = 10;
 
 function initialMessage(){
-    showingContentOnScreen('h1', 'Adivinhe o número secreto');
+    showingContentOnScreen('h1', 'Descubra o número secreto');
     showingContentOnScreen('p', `Escolha um número entre 1 e ${limitNumber}: `);
 }
 initialMessage();
