@@ -38,7 +38,7 @@ function showingContentOnScreen(tag, texto){
     field.innerHTML = texto;
     // responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate: 1.2});
 }
-showingContentOnScreen('h1', 'Adivinhe o número secreto');
+showingContentOnScreen('h1', 'Descubra o número secreto');
 showingContentOnScreen('p', 'Escolha um número entre 1 e 10: ');
 
 function kickCheck() {
@@ -53,11 +53,11 @@ function kickCheck() {
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (kick > secretNumber){
-            showingContentOnScreen('h1', 'Tente mais uma vez.');
-            showingContentOnScreen('p', `O número secreto é menor que ${kick}`);
+            showingContentOnScreen('h1', 'Tente novamente.');
+            showingContentOnScreen('p', `O número secreto é menor que ${kick}.`);
         } else {
             showingContentOnScreen('h1', 'Tente mais uma vez.');
-            showingContentOnScreen('p', `O número secreto é maior que ${kick}`);
+            showingContentOnScreen('p', `O número secreto é maior que ${kick}.`);
         }
         attempts++
         cleanField();
